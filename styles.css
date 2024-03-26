@@ -32,3 +32,13 @@ p {
 .options button: hover {
     background-color: #DE94D1;
 }
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.excited-gif {
+    display: none;
+    margin-top: 20px;
+}
