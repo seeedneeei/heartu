@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will you play Overcooked 2 with me? &lt;3</title>
     <link rel="stylesheet" href="styles.css">   
 </head>
@@ -16,14 +15,10 @@ content="width=device-width, initial-scale=1.0">
         <button onclick="answer('C')">C. I can't say no</button>
         <button onclick="answer('D')">D. All of the above</button>
     </div>
-    <div id="result></div>
-    <img src="giphy.gif" alt="Excited GIF" id="excited-gif" class="excited-gif">
 
     <script>
         function answer(choice) {
-            console.log("Answer selected: " + choice);
-            document.getElementById('result').innerText = "Yay! You chose the correct answer ^-^";
-            document.getElementById('excited-gif).style.display = "block";
+            alert("Yay! You chose the correct answer: " + choice);
         }
     </script>
 </body>
