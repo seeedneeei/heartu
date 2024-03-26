@@ -41,12 +41,15 @@ p {
 }
 
 .placeholder-image {
-    max-width: 100%;
-    width: 45%
-    display: block;
-    margin: 10px auto;
+    max-width: 10%;
+    width: auto;
+    display: inline-block;
 }
 
 .image-container {
     margin-top: 20px;
+}
+
+.image-container:first-child {
+    margin-bottom: 20px;
 }
