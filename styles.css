@@ -41,13 +41,15 @@ p {
 }
 
 .image-container {
-    margin-too: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .upper-images,
 .lower-images {
     display: flex;
-    justify-content: center;
 }
 
 .upper-images img,
