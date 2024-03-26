@@ -50,10 +50,10 @@ p {
 .upper-images,
 .lower-images {
     display: flex;
+    justify-content: center;
 }
 
-.upper-images img,
-.lower-images img {
+.placeholder-image {
     max-width: 10%;
     width: auto;
     margin: 0 5px;
