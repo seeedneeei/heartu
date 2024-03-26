@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
+    background-color: #f0f0f0;
 }
 
 h1 {
@@ -40,7 +41,8 @@ p {
 }
 
 .placeholder-image {
-    display: none;
     margin-top: 20px;
     max-width: 100%;
+    width: 45%;
+    display: inline-block;
 }
