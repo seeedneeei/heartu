@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+    <title>Will you play Overcooked 2 with me? &lt;3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            color: #FE7CB0;
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .options {
+            margin-top: 20px;
+        }
+        .options button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #FFEBF3;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .options button: hover {
+            background-color: #DE94D1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you play Overcooked 2 with me? &lt;3</h1>
+    <p>Please select your response:</p>
+    <div class="options">
+        <button onclick="answer('A')">A. Yes</button>
+        <button onclick="answer('B')">B. Absolutely</button>
+        <button onclick="answer('C')">C. I can't say no</button>
+        <button onclick="answer('D')">D. All of the above</button>
+    </div>
+
+    <script>
+        function answer(choice) {alert("You selected: " + choice);
+    }
+    </script>
+</body>
+</html>
