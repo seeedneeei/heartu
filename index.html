@@ -47,7 +47,8 @@
                 scene.style.display = 'none';
             });
 
-            document.getElementByID('scene' + (choice.charCodeAt(0) - 64 + 1)).style.display = 'block';
+            var sceneNumber = choice.charCodeAt(0) - 64 + 1;
+            document.getElementById('scene' + sceneNumber).style.display = 'block';
         }
 
         function goBack() {
