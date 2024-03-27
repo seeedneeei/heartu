@@ -7,7 +7,8 @@ body {
 
 h1 {
     color: #FE7CB0;
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
         
 p {
@@ -38,7 +39,7 @@ p {
 }
 
 .scene-image {
-    max-width: 200px;
+    max-width: 300px;
     width: 100%;
     margin-top: 20px;
     border-radius: 5px;
