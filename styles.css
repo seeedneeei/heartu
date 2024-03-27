@@ -37,14 +37,21 @@ p {
     background-color: #DE94D1;
 }
 
-.result {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-}
-
-.placeholder-image {
+.scene-image {
     max-width: 200px;
     width: 100%;
     margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#scene1 {
+    padding: 20px;
+}
+
+#scene2,
+#scene3,
+#scene4,
+#scene5 {
+    padding: 20px;
 }
