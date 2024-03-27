@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="styles.css">   
 </head>
 <body>
-    <h1>Will you play Overcooked 2 with me? ~~匸Pヽ(･ω･｀)</h1>
-    <p>Please select your response:</p>
-    <div class="options">
-        <button onclick="answer('A')">A. Yes</button>
-        <button onclick="answer('B')">B. Absolutely</button>
-        <button onclick="answer('C')">C. I can't say no</button>
-        <button onclick="answer('D')">D. All of the above</button>
+    <div id="scene1">
+        <h1>Nǐ hǎo. Will you play Overcooked 2 with me? ~~匸Pヽ(･ω･｀)</h1>
+        <p>Please select your response:</p>
+        <div class="options">
+            <button onclick="answer('A')">A. Yes</button>
+            <button onclick="answer('B')">B. Absolutely</button>
+            <button onclick="answer('C')">C. I can't say no</button>
+            <button onclick="answer('D')">D. All of the above</button>
+        </div>                                                    
     </div>
 
     <img src="hamter.jpg" alt="Image" class="placeholder-image">
+    
+    <div id="scene2" style="display: none;">
+        <h1>Yay! Gét gô</h1>
+        <img src="hamter.jpg" alt="Image" class="placeholder-image">
+    </div>
 
     <script>
         function answer(choice) {
-            alert("Yay! You chose the correct answer ^-^: " + choice);
+            document.getElementById('scene1').style.display = 'none';
+
+            document.getElementById('scene2').style.display = 'block';
         }
     </script>
 </body>
