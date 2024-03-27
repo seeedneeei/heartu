@@ -17,9 +17,6 @@ p {
         
 .options {
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
         
 .options button {
@@ -46,10 +43,7 @@ p {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-#scene1 {
-    padding: 20px;
-}
-
+#scene1,
 #scene2,
 #scene3,
 #scene4,
