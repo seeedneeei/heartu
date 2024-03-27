@@ -20,15 +20,42 @@
     </div>
     
     <div id="scene2" style="display: none;">
-        <h1>Yay! Gét gô</h1>
-        <img src="happi cat.gif" alt="GIF Image" class="placeholder-image">
+        <h1>Yes is not enough :(</h1>
+        <img src="scene 2.gif" alt="Scene for Answer A" class="scene-image">
+        <button onclick="goBack()">Go back</button>
     </div>
 
+    <div id="scene3" style ="display: none;">
+        <h1>Nooo, more enthusiasm!</h1>
+        <img src="scene 3.gif" alt="Scene for Answer B" class="scene-image">
+        <button onclick="goBack()">Go back</button>
+    </div>
+
+    <div id="scene4" style="display; none;">
+        <h1>What kind of answer is this?</h1>
+        <img src="scene 4.gif" alt="Scene for Answer C" class="scene-image">
+    </div>
+
+    <div id="scene5" style="display; none;">
+        <h1>Yayyyyy you chose the correct answer</h1>
+        <img src="happi cat.gif" alt="Scene for Answer D" class="scene-image">
+    </div>
+    
     <script>
         function answer(choice) {
-            document.getElementById('scene1').style.display = 'none';
+            document.querySelectorAll('[id^="scene"]').forEach(scene => {
+                scene.style.display = 'none';
+            });
 
-            document.getElementById('scene2').style.display = 'block';
+            document.getElementByID('scene' + (choice.charCodeAt(0) - 64 + 1)).style.display = 'block';
+        }
+
+        function goBack() {
+            document.querySelectorAll('[id^="scene"]).forEach(scene => {
+                scene.style.display = 'none';
+            }};
+
+            document.getElementById('scene1').style.display = 'block';
         }
     </script>
 </body>
