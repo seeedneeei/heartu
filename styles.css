@@ -31,7 +31,7 @@ p {
     transition: background-color 0.3s;
 }
 
-.options button: hover {
+.options button:hover {
     background-color: #DE94D1;
 }
 
@@ -49,7 +49,4 @@ p {
 #scene4,
 #scene5 {
     padding: 20px;
-    display: none;
-    flex-direction: column;
-    align-items: center;
 }
