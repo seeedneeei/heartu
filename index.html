@@ -31,13 +31,13 @@
         <button onclick="goBack()">Go back</button>
     </div>
 
-    <div id="scene4" style="display; none;">
+    <div id="scene4" style="display: none;">
         <h1>What kind of answer is this?</h1>
         <img src="scene 4.gif" alt="Scene for Answer C" class="scene-image">
         <button onclick="goBack()">Go back</button>
     </div>
 
-    <div id="scene5" style="display; none;">
+    <div id="scene5" style="display: none;">
         <h1>Yayyyyy you chose the correct answer</h1>
         <img src="happi cat.gif" alt="Scene for Answer D" class="scene-image">
         <button onclick="goBack()">Go back</button>
@@ -54,9 +54,9 @@
         }
 
         function goBack() {
-            document.querySelectorAll('[id^="scene"]).forEach(scene => {
+            document.querySelectorAll('[id^="scene"]').forEach(scene => {
                 scene.style.display = 'none';
-            }};
+            });
 
             document.getElementById('scene1').style.display = 'block';
         }
