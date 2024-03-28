@@ -45,18 +45,15 @@
     
     <script>
         function answer(choice) {
-            console.log("Choice:", choice);
             document.querySelectorAll('[id^="scene"]').forEach(scene => {
                 scene.style.display = 'none';
             });
 
             var sceneNumber = choice.charCodeAt(0) - 65 + 2;
-            console.log("Showing scene number:", sceneNumber);
             document.getElementById('scene' + sceneNumber).style.display = 'block';
         }
 
         function goBack() {
-            console.log("Going back...");
             document.querySelectorAll('[id^="scene"]).forEach(scene => {
                 scene.style.display = 'none';
             }};
