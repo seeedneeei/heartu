@@ -34,27 +34,26 @@
     <div id="scene4" style="display; none;">
         <h1>What kind of answer is this?</h1>
         <img src="scene 4.gif" alt="Scene for Answer C" class="scene-image">
+        <button onclick="goBack()">Go back</button>
     </div>
 
     <div id="scene5" style="display; none;">
         <h1>Yayyyyy you chose the correct answer</h1>
         <img src="happi cat.gif" alt="Scene for Answer D" class="scene-image">
+        <button onclick="goBack()">Go back</button>
     </div>
     
     <script>
         function answer(choice) {
-            console.log("Answer function called with choice: " + choice);
             document.querySelectorAll('[id^="scene"]').forEach(scene => {
                 scene.style.display = 'none';
             });
 
-            var sceneNumber = choice.charCodeAt(0) - 64 + 1;
-            console.log("Showing scene number: " + sceneNumber);
+            var sceneNumber = choice.charCodeAt(0) - 65 + 2;
             document.getElementById('scene' + sceneNumber).style.display = 'block';
         }
 
         function goBack() {
-            console.log("Go back function called");
             document.querySelectorAll('[id^="scene"]).forEach(scene => {
                 scene.style.display = 'none';
             }};
