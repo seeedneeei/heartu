@@ -49,7 +49,7 @@ p {
 #scene4,
 #scene5 {
     padding: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
